@@ -1,0 +1,21 @@
+{
+  "name": "vite-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "test": "sst test",
+    "start": "sst start",
+    "build": "sst build",
+    "deploy": "sst deploy",
+    "remove": "sst remove"
+  },
+  "devDependencies": {
+    "@aws-cdk/assert": "1.111.0"
+  },
+  "dependencies": {
+    "@serverless-stack/cli": "0.36.0",
+    "@serverless-stack/resources": "0.36.0",
+    "@aws-cdk/core": "1.111.0"
+  },
+  "workspaces": ["api/*", "web/*", "modules/*"]
+}
